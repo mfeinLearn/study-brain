@@ -1,0 +1,12 @@
+Flatiron Phase 3: Regularization (SAMPLE NOTES)
+
+Regularization adds a penalty on large weights to the loss function to reduce
+overfitting.
+
+L1 (Lasso): penalty = alpha * sum(|w|). Pushes some weights to exactly zero,
+so it also does feature selection.
+L2 (Ridge): penalty = alpha * sum(w^2). Shrinks all weights smoothly toward
+zero but rarely to exactly zero.
+
+Learning rate: the step size in gradient descent. Too high and the loss
+bounces or diverges; too low and training is slow.

@@ -1,0 +1,8 @@
+Calculus notes: derivatives and the chain rule (SAMPLE NOTES)
+
+Partial derivative: treat every other variable as a constant.
+d/dy of x^2 * y = x^2, because x^2 is a constant when we vary y.
+
+Chain rule: for f(g(x)), the derivative is f'(g(x)) * g'(x).
+Outer derivative evaluated at the inner function, times the inner derivative.
+Backpropagation is the chain rule applied layer by layer.

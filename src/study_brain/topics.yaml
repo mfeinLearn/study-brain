@@ -1,0 +1,127 @@
+# Deterministic topic tagging. Each topic lists lowercase keywords or phrases.
+# A question is tagged with the topic that has the most keyword hits.
+# Ties go to the topic listed first. No hits -> "other".
+# Matching is whole-word, so "dp" does not match "dpi".
+linear_algebra:
+  - eigenvector
+  - eigenvectors
+  - eigenvalue
+  - eigenvalues
+  - eigen
+  - matrix
+  - matrices
+  - determinant
+  - invertible
+  - inverse matrix
+  - vector space
+  - linear transformation
+  - basis
+  - span
+  - rank
+  - dot product
+  - orthogonal
+  - svd
+  - pca
+  - linear algebra
+calculus:
+  - derivative
+  - derivatives
+  - partial derivative
+  - chain rule
+  - gradient
+  - integral
+  - limit
+  - jacobian
+  - hessian
+  - calculus
+  - taylor series
+probability_stats:
+  - probability
+  - conditional probability
+  - bayes
+  - bayesian
+  - prior
+  - posterior
+  - likelihood
+  - variance
+  - standard deviation
+  - distribution
+  - normal distribution
+  - expected value
+  - expectation
+  - p-value
+  - hypothesis test
+  - confidence interval
+  - random variable
+  - sample variance
+  - statistics
+machine_learning:
+  - regularization
+  - overfitting
+  - underfitting
+  - learning rate
+  - training
+  - model
+  - loss function
+  - cross-validation
+  - logistic regression
+  - linear regression
+  - neural network
+  - backpropagation
+  - embedding
+  - embeddings
+  - rag
+  - transformer
+  - bias-variance
+  - l1
+  - l2
+  - gradient descent
+  - classifier
+python_pandas:
+  - pandas
+  - dataframe
+  - groupby
+  - loc
+  - iloc
+  - numpy
+  - python
+  - list comprehension
+  - merge
+  - series
+react:
+  - react
+  - useeffect
+  - usestate
+  - usememo
+  - component
+  - props
+  - jsx
+  - hook
+  - hooks
+dynamic_programming:
+  - dynamic programming
+  - dp
+  - memoization
+  - memoize
+  - tabulation
+  - bottom-up
+  - top-down
+  - recurrence
+  - subproblem
+  - subproblems
+  - coin change
+  - house robber
+  - knapsack
+  - longest common subsequence
+graphs:
+  - graph
+  - graphs
+  - bfs
+  - dfs
+  - dijkstra
+  - topological sort
+  - shortest path
+  - adjacency list
+  - union find
+  - cycle
+  - tree traversal

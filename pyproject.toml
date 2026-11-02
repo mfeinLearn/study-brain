@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "study-brain"
+version = "0.1.0"
+description = "An MCP server that learns what you're unclear on from the questions you ask."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Malcome Fein", email = "mfeindev@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.10,<2",
+    "chromadb>=1.0",
+    "numpy>=1.26",
+    "pyyaml>=6.0",
+]
+keywords = ["mcp", "rag", "chromadb", "study", "learning"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+study-brain = "study_brain.cli:main"
+study-brain-mcp = "study_brain.server:main"
+
+[project.urls]
+Repository = "https://github.com/mfeinLearn/study-brain"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/study_brain"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+filterwarnings = ["ignore::DeprecationWarning"]
