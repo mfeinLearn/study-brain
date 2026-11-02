@@ -109,16 +109,16 @@ Check it with `claude mcp list`, or run `/mcp` inside Claude Code.
 
 Each topic *t* gets an unclear score:
 
-```
-score(t) = w_f · N_t  +  w_r · Σ_{q ∈ t} 0.5^(age_days(q) / H)  +  w_c · C_t
-```
+$$
+\text{score}(t) = w_f \, N_t + w_r \sum_{q \in t} 0.5^{\,\text{age}(q) / H} + w_c \, C_t
+$$
 
 | Term | Meaning | Default |
 |---|---|---|
-| `N_t` | number of questions tagged *t* (frequency) | |
-| `0.5^(age/H)` | recency weight of one question. It's 1.0 today and halves every *H* days | H = 14 days |
-| `C_t` | repeat clusters in *t*: groups of 2+ questions that are the same confusion | |
-| `w_f, w_r, w_c` | weights | 1.0, 2.0, 3.0 |
+| $N_t$ | number of questions tagged $t$ (frequency) | |
+| $0.5^{\,\text{age}(q)/H}$ | recency weight of one question $q$. It's 1.0 today and halves every $H$ days | $H = 14$ days |
+| $C_t$ | repeat clusters in $t$: groups of 2+ questions that are the same confusion | |
+| $w_f, w_r, w_c$ | weights | 1.0, 2.0, 3.0 |
 
 The reasoning behind each term:
 - **Frequency** counts how much you've asked about a topic.
