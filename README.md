@@ -2,7 +2,7 @@
 
 An MCP server that learns what you're unclear on from the questions you ask.
 
-While studying (Flatiron AI engineering, DeepLearning.AI's Math for ML, LeetCode), you
+While studying (engineering, Math, LeetCode, etc), you
 ask an assistant a lot of questions. Many of them are the same confusion asked
 in different words, weeks apart. study-brain logs each question, tags it with a topic,
 spots repeats, and ranks the topics you're most unclear on. It also answers from your
